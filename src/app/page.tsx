@@ -42,7 +42,7 @@ export default function LandingPage() {
               alt="league logo"
             />
             <div className="mt-7 flex items-center justify-center gap-x-6">
-            <Link href="/browse">
+            <Link href="/hackathons">
                 <button className="relative z-20 rounded-md overflow-hidden bg-gradient-to-r from-gray-800 to-gray-900 px-6 py-3 text-md font-semibold text-white shadow-neon-pink hover:transform hover:translate-y-1 hover:shadow-pink-500 hover:ring-pink-500 hover:ring-2 hover:ring-offset-2 hover:ring-offset-black transition-all duration-300 ease-in-out">
                   Start Hacking!
                 </button>

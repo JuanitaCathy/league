@@ -65,25 +65,6 @@ function AccountDropdown() {
             {session.data?.user?.name}
           </Button>
         </DropdownMenuTrigger>
-        <DropdownMenuContent>
-          <DropdownMenuItem
-            onClick={() =>
-              signOut({
-                callbackUrl: '/',
-              })
-            }
-          >
-            <LogOutIcon className="mr-2" /> Sign Out
-          </DropdownMenuItem>
-
-          <DropdownMenuItem
-            onClick={() => {
-              setOpen(true);
-            }}
-          >
-            <DeleteIcon className="mr-2" /> Delete Account
-          </DropdownMenuItem>
-        </DropdownMenuContent>
       </DropdownMenu>
     </>
   );
@@ -107,8 +88,8 @@ export function Header() {
         </Link>
 
         <nav className="flex gap-8 font-semibold">
-          {isLoggedIn && (
-            <>
+          {/* {isLoggedIn && (
+            <> */}
               <Link className="hover:text-blue-500" href="/network-booth">
                 Network Booth
               </Link>
@@ -124,8 +105,8 @@ export function Header() {
               <Link className="hover:text-blue-500" href="/idea-generator">
                 Idea Generator
               </Link>
-            </>
-          )}
+            {/* </>
+          )} */}
         </nav>
 
         <div className="flex items-center gap-4">
